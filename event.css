@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+header{
+background-color: black;
+width: auto;
+height: 150px;
+padding-left: 20%;
+
+} 
+.um{
+    float: left;
+    margin-top: 0%;
+    padding-top: 0%;
+    
+}
+
+.cartaz{
+background-color: aliceblue;
+width: 400px;
+height: 600px;
+margin-left: 30%;
+}
+
+.dois{
+   float: right;
+   margin-right: 0px;
+    }
