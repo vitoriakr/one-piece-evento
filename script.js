@@ -1,13 +1,17 @@
-function changeBg(bg, title) {
-    const banner = document.querySelector('.banner');
-    const contents = document.querySelectorAll('.content');
-    banner.style.background = 'url("..\..\..\images\${bg}")';
-    banner.style.backgroundSize = 'cover';
-    banner.style.backgroundPosition = 'center';
+const imgs = document.getElementById("img");
+const img = document.querySelectorAll("#img img");
+ 
+let idx = 0;
+ 
+function carrossel(){
+  idx++;
+  
+  if(idx > img.length - 1){
+     idx = 0;
+  }
+
+  imgs.style.transform = "translateX($(-idx * 500)px)";
+
 }
-contents.forEach(content => {
-    content.classList.remove('active');
-    if (content.classList.contains(title)) {
-        content.classList.add('active');
-    }
-});
+
+setInterval(carrossel, 100);
